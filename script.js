@@ -1,5 +1,5 @@
 // Replace this URL with the public file link when hosting the site online.
-const DOWNLOAD_URL = 'https://github.com/belugauji5-creator/airoclient/releases/latest/download/AiroClient.zip';
+const DOWNLOAD_URL = 'https://github.com/belugaui5-creator/airoclient/releases/latest/download/AiroClient.zip';
 
 document.addEventListener('DOMContentLoaded', () => {
   const downloadLinks = document.querySelectorAll('a[download]');
