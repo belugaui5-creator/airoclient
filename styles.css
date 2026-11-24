@@ -18,3 +18,17 @@ a{color:inherit;text-decoration:none}
 .closing-cta{max-width:1140px;margin:0 auto 70px;padding:38px 42px;border:1px solid #3b4a3e;border-radius:9px;background:radial-gradient(ellipse at 80% 0%,#adf36b17,transparent 45%),#151d17;display:flex;align-items:center;justify-content:space-between;gap:20px}.closing-cta h2{font-size:35px}.footer{max-width:1200px;margin:auto;padding:22px 30px 30px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;color:#849087;font-size:11px}.footer .brand{color:var(--text);font-size:15px}.footer .brand img{width:30px;height:30px}
 @media(max-width:760px){.topbar{height:66px;padding:0 18px}.nav{display:none}.hero{grid-template-columns:1fr;padding:70px 20px 78px;gap:10px}.hero h1{font-size:57px;letter-spacing:-3.8px}.hero-art{height:310px}.pixel-scene{width:min(100%,400px);height:250px}.orbit{width:400px;height:230px}.art-label{right:calc(50% - 190px)}.hero-bottom{left:20px;right:20px;font-size:8px;gap:10px}.section{padding:70px 20px}.section-heading{display:block}.section-heading>p{margin-top:14px}.feature-grid,.steps{grid-template-columns:1fr}.feature-card{min-height:190px}.install-inner{padding:70px 20px}.closing-cta{margin:0 20px 55px;padding:28px 23px;align-items:flex-start;flex-direction:column}.closing-cta h2{font-size:31px}.footer{padding:20px;gap:12px;flex-wrap:wrap}.footer>span{order:3;width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+.key-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.key-card{padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.key-card h3{margin:20px 0 8px;font-size:19px}
+.key-card>p{min-height:48px;margin:0 0 22px;color:var(--muted);font-size:13px;line-height:1.8}
+.activation-form{display:grid;gap:11px}
+.activation-form label{font-size:12px;font-weight:700}
+.activation-form input{width:100%;min-height:48px;padding:0 13px;border:1px solid #425047;border-radius:6px;background:#101612;color:var(--text);font:13px var(--mono);letter-spacing:.5px}
+.activation-form input:focus{outline:2px solid var(--green);outline-offset:2px}
+.activation-form .button{justify-self:start}
+.activation-status{min-height:24px;margin:0;color:var(--muted);font-size:12px}
+.activation-status[data-state="error"]{color:#ffaaa0}
+.activation-status[data-state="success"]{color:var(--green)}
+@media(max-width:760px){.key-grid{grid-template-columns:1fr}.key-card>p{min-height:0}}
