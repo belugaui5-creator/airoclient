@@ -1,0 +1,12 @@
+name = "airoclient-license-api"
+main = "worker.mjs"
+compatibility_date = "2026-11-25"
+
+[[d1_databases]]
+binding = "LICENSES"
+database_name = "airoclient-license-keys"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[vars]
+ALLOWED_ORIGIN = "https://belugaui5-creator.github.io"

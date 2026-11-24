@@ -8,7 +8,7 @@
   <title>AiroClient — Minecraft 1.21.4</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -19,6 +19,7 @@
     <nav class="nav" aria-label="Главная навигация">
       <a href="#features">Возможности</a>
       <a href="#install">Установка</a>
+      <a href="#keys">Покупка и ключи</a>
       <a href="#faq">Вопросы</a>
     </nav>
     <a class="button button-small" href="https://github.com/belugaui5-creator/airoclient/releases/latest/download/AiroClient.zip" download>Скачать <span aria-hidden="true">↓</span></a>
@@ -55,6 +56,29 @@
         <article class="feature-card"><div class="feature-icon green">▧</div><h3>Fabric 1.21.4</h3><p>Игровая версия и загрузчик Fabric уже включены в сборку.</p><span class="card-index">01 / CLIENT</span></article>
         <article class="feature-card"><div class="feature-icon lime">⌁</div><h3>Плавная игра</h3><p>Sodium и Lithium помогают улучшить производительность.</p><span class="card-index">02 / PERFORMANCE</span></article>
         <article class="feature-card"><div class="feature-icon blue">◈</div><h3>Готов к запуску</h3><p>Ресурсы и библиотеки входят в ZIP. Java 21 загрузится автоматически, если её нет.</p><span class="card-index">03 / READY</span></article>
+      </div>
+    </section>
+
+    <section class="section keys-section" id="keys">
+      <div class="section-heading"><div><div class="eyebrow">ПОКУПКА И АКТИВАЦИЯ</div><h2>Ключ AiroClient</h2></div><p>Покупка проходит вручную на FunPay. После оплаты продавец передаст ключ.</p></div>
+      <div class="key-grid">
+        <article class="key-card">
+          <div class="feature-icon green" aria-hidden="true">↗</div>
+          <h3>Купить через FunPay</h3>
+          <p>Открой профиль продавца и оформи покупку на FunPay. Автоматического подключения сайта к FunPay нет.</p>
+          <a class="button button-primary" href="https://funpay.com/users/21173765/" target="_blank" rel="noopener noreferrer">Перейти в профиль FunPay <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="key-card">
+          <div class="feature-icon blue" aria-hidden="true">⌁</div>
+          <h3>Активировать ключ</h3>
+          <p>Введи код, который получил от продавца после оплаты.</p>
+          <form id="activation-form" class="activation-form" novalidate>
+            <label for="license-key">Ключ активации</label>
+            <input id="license-key" name="key" type="text" inputmode="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="AIRO-XXXXX-XXXXX-XXXXX-XXXXX" aria-describedby="activation-status" required>
+            <button class="button button-primary" type="submit">Активировать <span aria-hidden="true">→</span></button>
+            <p class="activation-status" id="activation-status" role="status" aria-live="polite">Если ключ ещё не пришёл, напиши продавцу в FunPay.</p>
+          </form>
+        </article>
       </div>
     </section>
 
